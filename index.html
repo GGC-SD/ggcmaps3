@@ -78,7 +78,7 @@
 				</div> <!-- menu-popup -->
 			</div> <!-- popup-group -->
 			<div class="popup-group">
-				<img id="travel" src="images/travel.png" onclick="openMenu()" alt="Travel Button">
+				<img id="travel" src="images/travel.png" onclick="openTravelMenu()" alt="Travel Button">
 				<div class="popup" id="travel-popup">
 					<h3>Travel</h3>
 				</div><!-- spaghetti -->
@@ -179,7 +179,7 @@
 
 		</div> <!-- svg-holder -->
 
-		<div class="content-disable" onclick="closeMenu()"></div>
+		<div class="content-disable" onclick="closeMenu(); closeTravelMenu();"></div>
 	</div>
 
 	<div class="nav">
@@ -260,6 +260,14 @@
 			</li>
 		</ul>
 	</div> <!-- nav -->
+	<div class="travel">
+		<h1 onclick="changeFloor('Campus')">GGCMaps</h1>
+		<img src="images/arrow-left.svg" onclick="closeTravelMenu()" alt="Close Menu Button">
+		<div class="menu-section"></div>
+		<ul>
+			<li><a>Campus</a></li>
+		</ul>
+	</div> <!-- travel -->
 	<!-- <script src="https://localhost:35729/livereload.js"></script> -->
 	<script>
 		visitCheck();
